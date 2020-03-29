@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+
+}
+p{
+    color:hsl(233, 8%, 62%);
+}
+header , .articles{
+    background: hsl(0, 0%, 98%);
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+    color:white;
+}
+header .desk{
+    content:"";
+    width:30rem;
+    background:url('../assets/bg-intro-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
+.services{
+    background: hsl(220, 16%, 96%);
+}
+#logo-footer{
+    filter: invert(100%);
+}
+@media only screen and (min-width:375px){
+    header .desk{
+        content:"";
+        background:url('../assets/bg-intro-desktop.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
